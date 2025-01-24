@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,10 @@
 <body>
   <div class="container">
     <h1>InventoryMaster Pro</h1>
+
+  
     <div class="inventory-section">
-      <h2>Inventory</h2>
+      <h2>Current Inventory</h2>
       <table id="inventory-table">
         <thead>
           <tr>
@@ -21,10 +23,12 @@
           </tr>
         </thead>
         <tbody>
-         
+        
         </tbody>
       </table>
     </div>
+
+  
     <div class="add-product-section">
       <h2>Add Product</h2>
       <form id="add-product-form">
@@ -34,7 +38,87 @@
         <button type="submit">Add Product</button>
       </form>
     </div>
+
+    
+    <div class="update-stock-section">
+      <h2>Update Stock</h2>
+      <form id="update-stock-form">
+        <select id="product-select">
+         
+        </select>
+        <input type="number" id="new-stock" placeholder="New Stock" required>
+        <button type="submit">Update Stock</button>
+      </form>
+    </div>
+
+    <div class="delete-product-section">
+      <h2>Delete Product</h2>
+      <form id="delete-product-form">
+        <select id="delete-product-select">
+          
+        </select>
+        <button type="submit">Delete Product</button>
+      </form>
+    </div>
+
+   
+    <div class="supplier-section">
+
+      <table id="supplier-table">
+        <thead>
+          <tr>
+            <th>Supplier Name</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+       
+        </tbody>
+      </table>
+
+      
+      <h2>Add Supplier</h2>
+      <form id="add-supplier-form">
+        <input type="text" id="supplier-name" placeholder="Supplier Name" required>
+        <input type="text" id="supplier-contact" placeholder="Supplier Contact" required>
+        <button type="submit">Add Supplier</button>
+      </form>
+    </div>
+
+   <div class="order-section">
+      <h2>Orders</h2>
+     
+      <table id="order-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Supplier</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+
+      <h2>Create Order</h2>
+      <form id="create-order-form">
+        <select id="order-product-select">
+        
+        </select>
+        <input type="number" id="order-quantity" placeholder="Quantity" required>
+        <select id="order-supplier-select">
+       
+        </select>
+        <button type="submit">Create Order</button>
+      </form>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
